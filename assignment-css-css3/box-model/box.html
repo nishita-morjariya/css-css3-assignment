@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+Question 1: Explain the CSS box model and its components (content, padding, border,
+margin). How does each affect the size of an element?
+
+css box model refers to how html elements are modeled in browser engines and how the dimensions of those html elements are derived from css properties. it consists of content, padding, borders and margins. 
+
+
+Question 2: What is the difference between border-box and content-box box-sizing inCSS?
+Which is the default?
+
+box sizing property allows us to include the padding and border in an element's total width and height. 
+the default value is content box. 
+in content box the dimension of element only includes height and width and does not include border and padding given to element. padding and border take space outside the elements. 
+in border box the value, not only the width and height properties are included but you will find padding and border inside of the box. 
+Content box: the content size remain same while border box size grows as padding and border grow. but when using border box, the size of border box remains same while size of the content decreases as padding and border grow. 
+-->
+
+<div class="card">
+    <img src="profile.webp" alt="Profile Picture" class="profile-pic">
+    <div class="profile-info">
+      <h2 class="username">John Doe</h2>
+      <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna nec ante egestas sollicitudin.</p>
+      <button class="follow-btn">Follow</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex property</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 1px;
+            flex: 1 1 20%;
+            min-width: 200px;
+        }
+
+        .content {
+            background-color: #e8e8e8;
+            padding: 1px;
+            flex: 2 1 60%;
+            min-width: 300px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms
+flex-container and flex-item.
+
+flex box is a one dimensional layout model that allows items to be arranged in rows or columns, with the ability to align, distribute, and adjust the spacing between elements efficiently. it simplifies creating complex layouts that would typically require complex css or float based techniques. 
+flexbox is useful for layout design because it provieds more control over the positioning and distribution of elements within a container. it is responsive, meaning that it adjusts the layout based on screen size, making it ideal for building mordern, flexible web designs. 
+flex-container -- this is the parent element that holds all the child items. it establishes the flex context for the items inside it. by setting the display property of a container to flex or inline-flex, it turns the container into a flex container. the child elements inside this container are automatically treated as flex items. 
+flex-item -- these are the child elements inside the flex conatiner. flex items are the elements that are laid out using the flex model. they are placed in a row or column and their size, position and alignment can be controlled using various flexbox properties. 
+
+• Question 2: Describe the properties justify-content, align-items, and flexdirection used in Flexbox.
+
+1.justify-content: used to align the flex horizontally. it defines the spacing between items when there is extra space available in the container. possible values for justify-content :
+    flex-start -- align items to the start of container. 
+    flex-end -- align items to the end of container. 
+    center -- align items to the center of container. 
+    space-between -- distribute items evenly, with the first item at the start and the last item at end. 
+    space-around -- distribute items evenly with equal space around each item. 
+    space-evenly -- distribute items evenly with equal space between and around them. 
+
+align-items : used to align flex item vertically possible values for this is :
+    flex-start -- align items to the start of the cross axis.
+    flex-end -- align itms to the end of the cross axis. 
+    center -- align to the center of cross axis. 
+    baseline -- align items to their baseline 
+    stretch -- stretch items to fill the container along the cross axis.
+
+flex-direction : defines the main axis along which the flex items will be placed, affecting the direction in which the items are arranged inside the container. possible values are 
+    row -- items placed in row
+    row-reverse -- items in a row, but in reverse order 
+    column -- items in a column
+    column-reverse -- items in a column but in reverse order 
+-->
+
+<div class="container">
+    <header>
+        <h1>Flexbox Webpage Layout</h1>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <p>Sidebar content</p>
+        </div>
+        <div class="content">
+            <p>Main content area</p>
+        </div>
+    </div>
+    <footer>
+        <p>Footer content</p>
+    </footer>
+</div>
+</body>
+</html>

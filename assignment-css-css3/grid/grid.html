@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid sample</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- 
+    Question 1: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over
+Flexbox?
+
+css grid is a layout system designed to handle 2d layout, allowing you to define both rows and columns. with grid more complex layout is possible. on other hand flex box is 1d layout system, it excels at arranging items in a single row or column, making it ideal for simpler layouts where the focus is on alignmnent and distribution along a single axis.
+
+• Question 2: Describe the grid-template-columns, grid-template-rows, and grid-gap
+properties. Provide examples of how to use them.
+
+grid template column -- defines the width of the column in a grid layout.
+grid template row -- defines the height of the rows in a grid layout. 
+grid-gap -- adds spacing between rows and columns 
+
+-->
+
+<div class="container-fluid">
+    <header class="fs-1 ">
+        Product grid layout 
+    </header>
+        <div class="row">
+
+        <div class="product-card col-md-4 ">
+            <img src="https://media.self.com/photos/5dd44cf5d0525b0009f5edf6/4:3/w_1920,c_limit/AdobeStock_208000726.jpeg" alt="" width="200px" height="200px">
+            <h2>Glasses </h2>
+            <p>price: Rs. 580/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://media.istockphoto.com/id/1446300082/photo/close-up-woman-applying-contact-eye-lens.jpg?s=612x612&w=0&k=20&c=YtTqqFZAqgp56TbKUQDXCcS2lU0FwXvICekdo7Lu8QI=" alt="" width="200px" height="200px">
+            <h2>Contact lenses</h2>
+            <p>price: Rs.3000/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://royalson.in/wp-content/uploads/2021/12/2-Men-Sunglasses.jpg" alt="" width="200px" height="200px">
+            <h2>Goggles</h2>
+            <p>price: Rs.1000/-</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product-card col-md-4 ">
+            <img src="https://media.self.com/photos/5dd44cf5d0525b0009f5edf6/4:3/w_1920,c_limit/AdobeStock_208000726.jpeg" alt="" width="200px" height="200px">
+            <h2>Glasses </h2>
+            <p>price: Rs. 580/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://media.istockphoto.com/id/1446300082/photo/close-up-woman-applying-contact-eye-lens.jpg?s=612x612&w=0&k=20&c=YtTqqFZAqgp56TbKUQDXCcS2lU0FwXvICekdo7Lu8QI=" alt="" width="200px" height="200px">
+            <h2>Contact lenses</h2>
+            <p>price: Rs.3000/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://royalson.in/wp-content/uploads/2021/12/2-Men-Sunglasses.jpg" alt="" width="200px" height="200px">
+            <h2>Goggles</h2>
+            <p>price: Rs.1000/-</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product-card col-md-4 ">
+            <img src="https://media.self.com/photos/5dd44cf5d0525b0009f5edf6/4:3/w_1920,c_limit/AdobeStock_208000726.jpeg" alt="" width="200px" height="200px">
+            <h2>Glasses </h2>
+            <p>price: Rs. 580/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://media.istockphoto.com/id/1446300082/photo/close-up-woman-applying-contact-eye-lens.jpg?s=612x612&w=0&k=20&c=YtTqqFZAqgp56TbKUQDXCcS2lU0FwXvICekdo7Lu8QI=" alt="" width="200px" height="200px">
+            <h2>Contact lenses</h2>
+            <p>price: Rs.3000/-</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://royalson.in/wp-content/uploads/2021/12/2-Men-Sunglasses.jpg" alt="" width="200px" height="200px">
+            <h2>Goggles</h2>
+            <p>price: Rs.1000/-</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

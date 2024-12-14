@@ -1,0 +1,45 @@
+body{
+    background-color: lightpink;
+}
+form{
+    margin: 2%;
+    padding: 2%;
+}
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: large;
+  }
+  input[type=reset] {
+    width: 80%;
+    background-color: red;
+    color: white;
+    font-size: large;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=reset]:hover {
+    background-color: lightcoral;
+  }
